@@ -105,50 +105,45 @@ export default function App() {
 
       <section className="hero" id="top">
         <div className="hero-overlay" />
-
+      
         <img
-          src="/Dribbler.png"
+          src="/assets/Dribbler.png"
           alt=""
           className="hero-silhouette silhouette-left"
         />
         <img
-          src="/Shooter.png"
+          src="/assets/Shooter.png"
           alt=""
           className="hero-silhouette silhouette-right"
         />
-
+      
         <div className="container hero-centered">
           <img
-            src="/SEBA basketball.png"
-            alt="Southeast Basketball Academy logo"
-            className="hero-logo"
+            src="/assets/rhc-crest-primary.png"
+            alt="Rivertown Hoops Camp crest logo"
+            className="hero-logo hero-logo-rhc"
           />
-
-          <h1 className="hero-title">
-            <span className="hero-big-letter">S</span>OUTH
-            <span className="hero-big-letter">E</span>AST{" "}
-            <span className="hero-big-letter">B</span>ASKETBALL{" "}
-            <span className="hero-big-letter">A</span>CADEMY
-          </h1>
-
+      
+          <h1 className="hero-title">Rivertown Hoops Camp</h1>
+      
           <h2 className="hero-subtitle">
             Fun, focused basketball skills development for young players.
           </h2>
-
+      
           <p className="hero-text hero-text-centered">
-            Southeast Basketball Academy is an elementary aged high-energy youth
-            basketball camp offering an engaging experience rooted in having fun
-            through competition and sport, positive coaching, skill building,
-            and community values.
+            Rivertown Hoops Camp is an elementary-aged, high-energy youth basketball
+            camp offering an engaging experience rooted in having fun through
+            competition and sport, positive coaching, skill building, and community
+            values.
           </p>
-
+      
           <p className="hero-text hero-text-centered hero-text-secondary">
-            Designed by coaches and parents for local families and young players
-            in Southeast Portland, SEBA seeks to create an organized, welcoming,
-            energetic, and deeply connected space for kids and families in the
-            Franklin High School area communities.
+            Designed by coaches and parents for local families and young players in
+            Southeast Portland, RHC creates an organized, welcoming, energetic, and
+            deeply connected space for kids and families in the Franklin High School
+            area communities.
           </p>
-
+      
           <div className="button-row button-row-centered">
             <a href="/registration-form" className="btn btn-primary">
               Register Now
@@ -157,7 +152,7 @@ export default function App() {
               Learn More
             </a>
           </div>
-
+      
           <div className="info-bar">
             {infoBarItems.map((item) => (
               <div key={item} className="info-bar-item">
