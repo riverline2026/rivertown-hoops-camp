@@ -41,17 +41,17 @@ export default function CampDetailsPage() {
         <div className="container register-stack">
           <div className="register-header">
             <img
-              src="/SEBA basketball.png"
-              alt="SEBA logo"
+              src="/assets/rhc-crest-primary.png"
+              alt="Rivertown Hoops Camp logo"
               className="register-logo"
             />
             <div>
               <div className="section-eyebrow">Camp Details</div>
               <h1 className="section-title small-margin">
-                What families can expect from SEBA
+                What families can expect from RHC
               </h1>
               <p className="section-text">
-                Southeast Basketball Academy is designed as a full-week,
+                Rivertown Hoops Camp is designed as a full-week,
                 high-energy youth basketball camp built around skill
                 development, positive coaching, competition, and community.
               </p>
@@ -86,7 +86,7 @@ export default function CampDetailsPage() {
               <div className="form-section location-map-card">
                 <h3>Gym Location</h3>
                 <img
-                  src="/Gym Location.png"
+                  src="/assets/Gym Location.png"
                   alt="Franklin High School gym entrance and parking map"
                   className="location-map-image"
                 />
@@ -96,7 +96,7 @@ export default function CampDetailsPage() {
             <div className="form-section">
               <h3>Coaching + Support</h3>
               <p className="form-text">
-                SEBA is led by Coach Nate Forster with support from parent
+                RHC is led by Coach Nate Forster with support from parent
                 coaches and volunteer counselors connected to the Franklin
                 Basketball Program. The camp is independently operated and is
                 designed to give young players a positive, local basketball
