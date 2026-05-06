@@ -273,20 +273,6 @@ export default function PoliciesPage() {
                 announcements.
               </p>
             </div>
-
-            <div className="form-next-step">
-              <div>
-                <h3>Ready to continue?</h3>
-                <p>
-                  After reviewing these policies, return to the waiver and photo
-                  release page to complete registration.
-                </p>
-              </div>
-
-              <a href="/waiver-photo-release" className="btn btn-primary">
-                Return to Waiver
-              </a>
-            </div>
           </div>
         </div>
       </main>

@@ -92,12 +92,6 @@ export default function WaiverPage() {
                 with participation in Rivertown Hoops Camp, except where
                 such release is prohibited by law.
               </p>
-
-              <label className="checkbox-row">
-                <input type="checkbox" required />I am the parent/legal guardian
-                and I agree to this liability waiver on behalf of my
-                child/dependent.
-              </label>
             </div>
 
             <div className="form-section">
@@ -120,11 +114,6 @@ export default function WaiverPage() {
                 during registration is accurate to the best of my knowledge and
                 that I will notify RHC of any changes before camp begins.
               </p>
-
-              <label className="checkbox-row">
-                <input type="checkbox" required />I authorize emergency medical
-                care and transport if needed.
-              </label>
             </div>
 
             <div className="form-section">
@@ -150,11 +139,6 @@ export default function WaiverPage() {
                 <input type="checkbox" />I consent to RHC using photos or
                 videos of my child/dependent for the limited uses described
                 above.
-              </label>
-
-              <label className="checkbox-row">
-                <input type="checkbox" />I opt out of photo and video use for my
-                child/dependent.
               </label>
             </div>
 
@@ -214,25 +198,6 @@ export default function WaiverPage() {
                 </a>
                 .
               </p>
-
-              <label className="checkbox-row">
-                <input type="checkbox" required />I have read and agree to the
-                Rivertown Hoops Camp camp policies.
-              </label>
-            </div>
-
-            <div className="form-next-step">
-              <div>
-                <h3>Complete Waiver + Release</h3>
-                <p>
-                  By submitting, you confirm that all required agreements are
-                  accepted by the player’s parent or legal guardian.
-                </p>
-              </div>
-
-              <button type="submit" className="btn btn-primary">
-                Complete Waiver + Release
-              </button>
             </div>
           </form>
         </div>

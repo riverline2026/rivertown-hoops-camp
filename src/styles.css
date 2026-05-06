@@ -1206,3 +1206,95 @@ button {
     align-items: flex-start;
   }
 }
+/* RHC Registration Backend V1 Form Support */
+.form-status {
+  margin: 0 0 24px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.form-status p {
+  margin: 0;
+}
+
+.form-status p + p {
+  margin-top: 8px;
+}
+
+.form-status-success {
+  border: 1px solid rgba(46, 125, 50, 0.45);
+  background: rgba(46, 125, 50, 0.14);
+}
+
+.form-status-error {
+  border: 1px solid rgba(183, 28, 28, 0.45);
+  background: rgba(183, 28, 28, 0.14);
+}
+
+.form-status-submitting {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.checkbox-label,
+.radio-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+.checkbox-label input,
+.radio-label input {
+  width: auto;
+  margin-top: 4px;
+  flex: 0 0 auto;
+}
+
+.radio-stack {
+  display: grid;
+  gap: 12px;
+}
+
+/* RHC Registration Form Checkbox/Radio Cleanup */
+.registration-form .checkbox-label,
+.registration-form .radio-label {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: start;
+  gap: 12px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.registration-form .checkbox-label input[type="checkbox"],
+.registration-form .radio-label input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  justify-self: start;
+  align-self: start;
+  flex: 0 0 auto;
+  accent-color: #6f001f;
+}
+
+.registration-form .checkbox-label span,
+.registration-form .radio-label span {
+  display: block;
+  text-align: left;
+}
+
+.registration-form .checkbox-label a,
+.registration-form .radio-label a {
+  color: inherit;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.registration-form .checkbox-label a:hover,
+.registration-form .radio-label a:hover {
+  opacity: 0.75;
+}
