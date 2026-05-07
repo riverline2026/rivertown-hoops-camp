@@ -134,12 +134,6 @@ export default function WaiverPage() {
                 Photo and media consent is optional and is not required for camp
                 registration.
               </p>
-
-              <label className="checkbox-row">
-                <input type="checkbox" />I consent to RHC using photos or
-                videos of my child/dependent for the limited uses described
-                above.
-              </label>
             </div>
 
             <div className="form-section">
