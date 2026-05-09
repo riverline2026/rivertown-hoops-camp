@@ -291,6 +291,15 @@ export default function RegistrationForm() {
   const isSubmitting = submitState.status === "submitting";
   const isSuccess = submitState.status === "success";
 
+const stripePaymentLinkBase = process.env.REACT_APP_STRIPE_PAYMENT_LINK_URL || "";
+
+const stripePaymentUrl =
+  stripePaymentLinkBase && submitState.submissionId
+    ? `${stripePaymentLinkBase}?client_reference_id=${encodeURIComponent(
+        submitState.submissionId
+      )}`
+    : stripePaymentLinkBase;
+
   return (
     <div className="page registration-page">
       <header className="site-nav">
@@ -350,15 +359,46 @@ export default function RegistrationForm() {
           </div>
 
           {submitState.status !== "idle" && (
-            <div className={`form-status form-status-${submitState.status}`}>
-              <p>{submitState.message}</p>
-              {submitState.submissionId && (
-                <p>
-                  <strong>Confirmation ID:</strong> {submitState.submissionId}
-                </p>
-              )}
-            </div>
-          )}
+  <div className={`form-status form-status-${submitState.status}`}>
+    <p>{submitState.message}</p>
+    {submitState.submissionId && (
+      <>
+        <p>
+          <strong>Confirmation ID:</strong> {submitState.submissionId}
+        </p>
+
+        {isSuccess && stripePaymentUrl && (
+          <div className="registration-payment-next-step">
+            <p>
+              <strong>Next step:</strong> Your registration is not complete until
+              payment is received.
+            </p>
+            <p>
+              Pay the $275 registration fee using the secure Stripe payment page.
+              If using an early registration or sibling discount code, enter it
+              on the Stripe checkout page.
+            </p>
+            <p>
+              Please enter your RHC Confirmation ID on the Stripe checkout page
+              so we can match your payment to your registration.
+            </p>
+            <a
+              className="btn primary"
+              href={stripePaymentUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Pay Securely with Stripe
+            </a>
+            <p className="payment-help-text">
+              Questions? Email team@rivertownhoopscamp.com.
+            </p>
+          </div>
+        )}
+      </>
+    )}
+  </div>
+)}
 
           {!isSuccess && (
             <form className="registration-form" onSubmit={handleSubmit}>
